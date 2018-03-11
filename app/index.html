@@ -21,8 +21,13 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div class="jumbotron">
+        <img src="images/GE_Logo.png" alt="Grade Exchanger"><br>
+        <h1>Grade Exchanger</h1>
+    </div>
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
+        <a class="navbar-brand" href="#/">Grade Exchanger</a>
         <div class="container">
           <div class="navbar-header">
 
@@ -33,15 +38,15 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">gradeexchangerFrontEnd</a>
           </div>
-
+          
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
               <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li><a ng-href="#!/registroAlumnos">Registro de Alumnos</a></li>
+              <li><a ng-href="#!/calificacionesAlumno">Calificaciones de Alumnos</a></li>
+              <li><a ng-href="#!/buscarIntercambios">Buscar Intercambios</a></li>
             </ul>
           </div>
         </div>
@@ -49,7 +54,7 @@
     </div>
 
     <div class="container">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
@@ -88,6 +93,9 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/registroalumnos.js"></script>
+        <script src="scripts/controllers/calificacionesalumno.js"></script>
+        <script src="scripts/controllers/buscarintercambios.js"></script>
         <!-- endbuild -->
 </body>
 </html>

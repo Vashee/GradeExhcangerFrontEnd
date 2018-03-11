@@ -29,6 +29,21 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/registroAlumnos', {
+        templateUrl: 'views/registroAlumnos.html',
+        controller: 'RegistroalumnosCtrl',
+        controllerAs: 'registroalumnos'
+      })
+      .when('/calificacionesAlumno', {
+        templateUrl: 'views/calificacionesalumno.html',
+        controller: 'CalificacionesalumnoCtrl',
+        controllerAs: 'calificacionesAlumno'
+      })
+      .when('/buscarIntercambios', {
+        templateUrl: 'views/buscarintercambios.html',
+        controller: 'BuscarintercambiosCtrl',
+        controllerAs: 'buscarIntercambios'
+      })
       .otherwise({
         redirectTo: '/'
       });
