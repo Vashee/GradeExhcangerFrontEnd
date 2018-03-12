@@ -44,6 +44,11 @@ angular
         controller: 'BuscarintercambiosCtrl',
         controllerAs: 'buscarIntercambios'
       })
+      .when('/revalidaralumno', {
+        templateUrl: 'views/revalidaralumno.html',
+        controller: 'RevalidaralumnoCtrl',
+        controllerAs: 'revalidaralumno'
+      })
       .otherwise({
         redirectTo: '/'
       });
